@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-handwriting: 'Caveat', cursive;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F7F1E5;
+    color: #302D25;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-handwriting {
+    font-family: var(--font-handwriting);
+  }
+}
+
+/* Botanical parchment subtle patterns and vintage accents */
+.bg-parchment {
+  background-color: #F7F1E5;
+}
+
+.bg-parchment-light {
+  background-color: #FAF6EE;
+}
+
+.bg-parchment-warm {
+  background-color: #EFE8D8;
+}
+
+.text-charcoal {
+  color: #302D25;
+}
+
+.text-olive-deep {
+  color: #353D22;
+}
+
+.bg-olive-deep {
+  background-color: #353D22;
+}
+
+.border-sage {
+  border-color: #A6AD8B;
+}
+
+/* Subtle book shadow simulation */
+.book-shadow {
+  box-shadow: 
+    -12px 18px 30px -10px rgba(48, 45, 37, 0.35),
+    -4px 6px 12px -2px rgba(48, 45, 37, 0.15),
+    0 0 0 1px rgba(48, 45, 37, 0.05);
+}
+
+.card-pressed {
+  box-shadow: 0 2px 8px -2px rgba(48, 45, 37, 0.08), 0 0 0 1px rgba(166, 173, 139, 0.25);
+}
+
+.card-hover {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -6px rgba(48, 45, 37, 0.14), 0 0 0 1px rgba(166, 173, 139, 0.35);
+}

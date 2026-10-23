@@ -1,0 +1,6 @@
+{
+  "name": "Margaret's Little Guide to Everyday Wellness",
+  "description": "High-converting botanical vintage landing page for Margaret's Little Guide to Everyday Wellness e-book and printable bonuses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
